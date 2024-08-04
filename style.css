@@ -1,0 +1,73 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80vw;
+    height: 70vh;
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslateblue;
+    border: 1px solid white;
+    border-radius: 10%;
+    position: relative;
+}
+
+.title {
+    background-color: green;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Add this */
+}
+
+.alien-img1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0.3;
+}
+
+.alien-img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0.3;
+    transform: scaleX(-1);
+}
+
+.grass-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    border-radius: 10%;
+}
+
+.content {
+    background-color: rgba(0, 255, 0, 0.3);
+    margin: 5vh;
+    width: 60vw;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    padding: 2vw;
+    position: relative;
+}
